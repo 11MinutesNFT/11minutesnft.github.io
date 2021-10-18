@@ -1,0 +1,16 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    background-color: #000;
+}
+
+body.coming-soon {
+    background-image: url(../../static/img/coming-soon.jpeg);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
