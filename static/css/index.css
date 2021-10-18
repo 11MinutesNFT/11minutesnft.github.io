@@ -1,16 +1,130 @@
 html, body {
     margin: 0;
     padding: 0;
-    height: 100%;
 }
 
 body {
     background-color: #000;
+    background-image: url(../../static/img/bg.png);
+    font-family: 'Agency FB', arial;
+    color: white;
 }
 
-body.coming-soon {
-    background-image: url(../../static/img/coming-soon.jpeg);
-    background-size: contain;
-    background-position: center center;
+.logo {
+    width: 368px;
+    height: 38px;
+    background-image: url(../../static/img/logo.png);
     background-repeat: no-repeat;
+    position: fixed;
+    left: 70px;
+    top: 55px;
+}
+
+.menu-holder {
+    margin-top: 40px;
+}
+
+.menu {
+    width: 551px;
+    font-size: 46px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    background-image: url(../img/top-line.png);
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    padding-bottom: 2px;
+}
+
+header .menu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header .menu a:hover {
+    color: #ac5600;
+}
+
+.main {
+    width: 1000px;
+    margin: auto;
+}
+
+.main .countdown-holder {
+    width: 700px;
+    height: 90px;
+    margin: auto;
+    display: flex;
+    font-family: Varnio;
+    justify-content: space-between;
+    margin-top: 70px;
+    user-select: none;
+}
+
+.main .countdown-holder .countdown-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main .countdown-holder .colon {
+    font-size: 60px;
+}
+
+.main .countdown-holder .countdown-section .time {
+    font-size: 60px;
+}
+
+.main .countdown-holder .countdown-section .time-label {
+    font-size: 20px;
+}
+
+.main .decription {
+    text-align: center;
+    background-image: url(../img/top-line.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    padding-bottom: 60px;
+}
+
+.main .decription .title {
+    font-size: 50px;
+    margin-top: 40px;
+}
+
+.main .decription .content {
+    font-size: 45px;
+    margin-top: 40px;
+} 
+
+.main .social-media {
+    width: 200px;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main .social-media a {
+    text-decoration: none;
+}
+
+.main .social-media .icon {
+    width: 53px;
+    height: 53px;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.main .social-media .twitter {
+    background-image: url(../img/twitter.png);
+}
+
+.main .social-media .telegram {
+    background-image: url(../img/telegram.png);
+}
+
+.main .social-media .discord {
+    background-image: url(../img/twitter.png);
 }
