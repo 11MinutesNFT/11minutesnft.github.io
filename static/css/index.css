@@ -6,18 +6,27 @@ html, body {
 body {
     background-color: #000;
     background-image: url(../../static/img/bg.png);
+    background-attachment: fixed;
     font-family: 'Agency FB', arial;
     color: white;
 }
 
-.logo {
-    width: 368px;
-    height: 38px;
-    background-image: url(../../static/img/logo.png);
-    background-repeat: no-repeat;
+.logo-holder {
     position: fixed;
+    z-index: 5;
     left: 70px;
     top: 55px;
+    width: 368px;
+    height: 38px;
+    background-image: radial-gradient(black, transparent);
+}
+
+.logo {
+    background: linear-gradient(0deg, black,transparent);
+    width: 100%;
+    height: 100%;
+    background-image: url(../../static/img/logo.png);
+    background-repeat: no-repeat;
 }
 
 .menu-holder {
@@ -48,6 +57,7 @@ header .menu a:hover {
 .main {
     width: 1000px;
     margin: auto;
+    padding-bottom: 300px;
 }
 
 .main .countdown-holder {
@@ -86,6 +96,7 @@ header .menu a:hover {
     background-repeat: no-repeat;
     background-position: bottom center;
     padding-bottom: 60px;
+    font-family: 'Roboto Slab', sans-serif;
 }
 
 .main .decription .title {
@@ -114,6 +125,7 @@ header .menu a:hover {
     width: 53px;
     height: 53px;
     background-repeat: no-repeat;
+    background-size: 53px 53px;
     display: inline-block;
 }
 
@@ -126,5 +138,98 @@ header .menu a:hover {
 }
 
 .main .social-media .discord {
-    background-image: url(../img/twitter.png);
+    background-image: url(../img/discord.png);
+}
+
+.rules {
+    margin-left: 40px;
+    padding-top: 100px;
+}
+
+.rules .title {
+    font-size: 80px;
+    text-align: center;
+    background-image: url(../img/bot-line.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    padding-bottom: 10px;
+}
+
+.rules .items {
+    width: 1570px;
+}
+
+.rules ul {
+    list-style: none;
+    font-size: 37px;
+    background-image: url(../img/bot-line.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    padding-bottom: 50px;
+}
+
+.rules ul li {
+    margin-top: 10px;
+    position: relative;
+    text-indent: 40px;
+}
+
+.rules ul li::before {
+    content: "\2022";
+    color: #f77b01;
+    font-weight: bold;
+    display: inline-block;
+    position: absolute;
+    left: -40px;
+}
+
+.end-empty-space {
+    margin-top: 500px;
+}
+
+.faq {
+    margin-left: 70px;
+    padding-top: 100px;
+}
+
+.faq .title {
+    font-size: 80px;
+    text-align: center;
+    background-image: url(../img/bot-line.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.faq .questions {
+    width: 1570px;
+    font-size: 37px;
+}
+
+.faq .questions .question {
+    cursor: pointer;
+    margin: 10px 0;
+    font-weight: bold;
+    background-image: url(../img/plus.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+    text-indent: 40px;
+    user-select: none;
+}
+
+.faq .questions .extensible.opened .question {
+    background-image: url(../img/minus.png);
+}
+
+.faq .questions .answer {
+    color: #f57a00;
+    overflow: hidden;
+    max-height: 0px;
+    transition-property: max-height;
+    transition-duration: 500ms;
+}
+
+.faq .questions .extensible.opened .answer {
+    max-height: 300px;
 }

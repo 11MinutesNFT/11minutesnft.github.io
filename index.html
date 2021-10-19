@@ -5,18 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>11Minutes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" type="text/css" href="./static/css/fonts.css"/>
     <link rel="stylesheet" type="text/css" href="./static/css/index.css"/>
-    <script type="text/javascript" src="./static/js/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./static/js/index.js"></script>
 </head>
 <body>
     <header>
-        <div class="logo"></div>
+        <div class="logo-holder">
+            <div class="logo"></div>
+        </div>
         <nav class="menu-holder">
             <div class="menu">
-                <a href="#games">Games</a>
-                <a href="#faq">FAQ</a>
-                <a href="#rules">Rules</a>
+                <a href="#">Games</a>
+                <a scroll-to-target href="#faq">FAQ</a>
+                <a scroll-to-target href="#rules">Rules</a>
             </div>
         </nav>
     </header>
@@ -70,5 +74,134 @@
             <a href="#" class="icon discord"></a>
         </div>
     </section>
+
+    <section id="faq" class="faq">
+        <div class="title">
+            <span>FAQ</span>
+        </div>
+
+        <div class="questions">
+            <div class="extensible">
+                <div class="question">
+                    <span>How can I participate in the games?</span>
+                </div>
+
+                <div class="answer">
+                    <span>Buy one or more tokens from the opensea. Official link is in the #🕚about channel</span>
+                </div>
+            </div>
+
+            <div class="extensible">
+                <div class="question">
+                    <span>How do I get notified of new games?</span>
+                </div>
+
+                <div class="answer">
+                    <span>All games will be announced on the website, discord, and twitter. So stay tuned.</span>
+                </div>
+            </div>
+
+            <div class="extensible">
+                <div class="question">
+                    <span>Does owning more tokens increase my chances to win the prize?</span>
+                </div>
+
+                <div class="answer">
+                    <span>Yes, the more players your own, the more chances to break the high score you have.</span>
+                </div>
+            </div>
+
+            <div class="extensible">
+                <div class="question">
+                    <span>How many players will share the prize?</span>
+                </div>
+
+                <div class="answer">
+                    <span>The prize money will be distributed depending on the position on the leader board. We differentiate between the top 25%, top 10%, top 5%, top 1% and of course first place.</span>
+                </div>
+            </div>
+
+            <div class="extensible">
+                <div class="question">
+                    <span>How do the games work? How many games will there be?</span>
+                </div>
+
+                <div class="answer">
+                    <span>No details about the games are disclosed. You have the opportunity to start the game once per NFT you have within 24 hours and to achieve a high score within 11 minutes.</span>
+                </div>
+            </div>
+
+            <div class="extensible">
+                <div class="question">
+                    <span>What information is available about the games?</span>
+                </div>
+
+                <div class="answer">
+                    <span>None of the games will be games of chance.</span>
+                </div>
+            </div>
+
+            <div class="extensible">
+                <div class="question">
+                    <span>Is my NFT going to get burned if I'm not in the Top 25%?</span>
+                </div>
+
+                <div class="answer">
+                    <span>No, it will never be burned. Each NFT is a trophy that you can be proud of and that you can keep forever.</span>
+                </div>
+            </div>
+
+            <div class="extensible">
+                <div class="question">
+                    <span>What if I am at work or sleeping?</span>
+                </div>
+
+                <div class="answer">
+                    <span>We assume that within 24 hours everyone can find the opportunity to change their life within 11 minutes.</span>
+                </div>
+            </div>
+
+            <div class="extensible">
+                <div class="question">
+                    <span>What if I miss the game?</span>
+                </div>
+
+                <div class="answer">
+                    <span>If you miss a game, you cannot get a prize.</span>
+                </div>
+            </div>
+
+            <div class="extensible">
+                <div class="question">
+                    <span>How is the prize pool funded, where is it stored?</span>
+                </div>
+
+                <div class="answer">
+                    <span>60% of primary sales have been used to fund the prize. It is stored in the smart contract for everyone to see.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="rules" class="rules">
+        <div class="title">
+            <span>Rules</span>
+        </div>
+
+        <div class="items">
+            <ul>
+                <li><span>In order to be able to participate in the game, you must have an NFT of the respective game session in possession</span></li>
+                <li><span>As soon as the start time of a session is announced, you can start the game within 24 hours. You have to prove your skills within 11 minutes of starting the game</span></li>
+                <li><span>Within the 11 minutes of playing time you have as many attempts as you want to achieve a high score. Your personal high score will then be entered in the leaderboard</span></li>
+                <li><span>Owners of several NFTs can start the game once per NFT and each have 11 minutes.</span></li>
+                <li><span>If you do not start the game within 24 hours you will lose your chance to win a prize.</span></li>
+                <li><span>The NFT's that you have purchased will not be burned and will remain in your possession</span></li>
+                <li><span>The prizes are determined by position in the leaderboard. The levels are as follows: Top 25%, Top 10%, Top 5%, Top 1% and of course first place on the leasderboard.</span></li>
+                <li><span>In addition to cash prizes, everyone who lands in the top 25% will win an NFT for the next game session</span></li>
+            </ul>
+        </div>
+    </section>
+
+    <div class="end-empty-space"></div>
 </body>
 </html>
