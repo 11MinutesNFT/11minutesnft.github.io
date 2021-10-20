@@ -12,13 +12,11 @@ body {
 }
 
 .logo-holder {
-    position: fixed;
-    z-index: 5;
-    left: 70px;
-    top: 55px;
+    position: absolute;
+    left: 60px;
+    top: 30px;
     width: 368px;
     height: 38px;
-    background-image: radial-gradient(black, transparent);
 }
 
 .logo {
@@ -29,8 +27,22 @@ body {
     background-repeat: no-repeat;
 }
 
+.page-container {
+    width: 900px;
+    margin: auto;
+}
+
 .menu-holder {
-    margin-top: 40px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 1px solid #fb7700;
+    position: fixed;
+    width: 100%;
+    background: black;
+    z-index: 5;
+    top: 0;
 }
 
 .menu {
@@ -39,10 +51,7 @@ body {
     margin: auto;
     display: flex;
     justify-content: space-around;
-    background-image: url(../img/top-line.png);
-    background-repeat: no-repeat;
-    background-position-y: bottom;
-    padding-bottom: 2px;
+    position: relative;
 }
 
 header .menu a {
@@ -55,9 +64,9 @@ header .menu a:hover {
 }
 
 .main {
-    width: 1000px;
     margin: auto;
     padding-bottom: 300px;
+    padding-top: 150px;
 }
 
 .main .countdown-holder {
@@ -90,7 +99,7 @@ header .menu a:hover {
     font-size: 20px;
 }
 
-.main .decription {
+.main .description {
     text-align: center;
     background-image: url(../img/top-line.png);
     background-repeat: no-repeat;
@@ -99,22 +108,15 @@ header .menu a:hover {
     font-family: 'Roboto Slab', sans-serif;
 }
 
-.main .decription .title {
-    font-size: 50px;
+.main .description .title {
+    font-size: 37.5px;
     margin-top: 40px;
 }
 
-.main .decription .content {
-    font-size: 45px;
+.main .description .content {
+    font-size: 27px;
     margin-top: 40px;
-} 
-
-.main .social-media {
-    width: 200px;
-    margin: auto;
-    margin-top: 40px;
-    display: flex;
-    justify-content: space-between;
+    line-height: 40px;
 }
 
 .main .social-media a {
@@ -155,17 +157,10 @@ header .menu a:hover {
     padding-bottom: 10px;
 }
 
-.rules .items {
-    width: 1570px;
-}
-
 .rules ul {
     list-style: none;
-    font-size: 37px;
-    background-image: url(../img/bot-line.png);
-    background-repeat: no-repeat;
-    background-position: bottom center;
-    padding-bottom: 50px;
+    font-size: 28px;
+    padding-bottom: 100px;
 }
 
 .rules ul li {
@@ -203,8 +198,7 @@ header .menu a:hover {
 }
 
 .faq .questions {
-    width: 1570px;
-    font-size: 37px;
+    font-size: 28px;
 }
 
 .faq .questions .question {
@@ -214,7 +208,7 @@ header .menu a:hover {
     background-image: url(../img/plus.png);
     background-position: left center;
     background-repeat: no-repeat;
-    text-indent: 40px;
+    text-indent: 50px;
     user-select: none;
 }
 
@@ -232,4 +226,44 @@ header .menu a:hover {
 
 .faq .questions .extensible.opened .answer {
     max-height: 300px;
+}
+
+.social-media {
+    position: fixed;
+    right: 90px;
+    width: 100px;
+    height: 332px;
+    top: 50%;
+    margin-top: -166px;
+}
+
+.social-media .social-media-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-media .icon {
+    width: 53px;
+    height: 53px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 15px;
+}
+
+.social-media .icon.twitter {
+    background-image: url(../img/twitter.png);
+}
+
+.social-media .icon.discord {
+    background-image: url(../img/discord.png);
+}
+
+.social-media .icon.opensea {
+    background-image: url(../img/opensea.png);
+}
+
+.social-media .icon.telegram {
+    background-image: url(../img/telegram.png);
 }
