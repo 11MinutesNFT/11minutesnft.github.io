@@ -6,6 +6,7 @@ html, body {
 body {
     background-color: #000;
     background-image: url(../../static/img/bg.png);
+    background-size: 100% 100%;
     background-attachment: fixed;
     font-family: 'Agency FB', arial;
     color: white;
@@ -13,10 +14,10 @@ body {
 
 .logo-holder {
     position: absolute;
-    left: 60px;
-    top: 30px;
-    width: 368px;
-    height: 38px;
+    left: 50px;
+    top: 34px;
+    width: 230px;
+    height: 32px;
 }
 
 .logo {
@@ -25,6 +26,7 @@ body {
     height: 100%;
     background-image: url(../../static/img/logo.png);
     background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .page-container {
@@ -144,7 +146,6 @@ header .menu a:hover {
 }
 
 .rules {
-    margin-left: 40px;
     padding-top: 100px;
 }
 
@@ -183,7 +184,6 @@ header .menu a:hover {
 }
 
 .faq {
-    margin-left: 70px;
     padding-top: 100px;
 }
 
@@ -206,7 +206,8 @@ header .menu a:hover {
     margin: 10px 0;
     font-weight: bold;
     background-image: url(../img/plus.png);
-    background-position: left center;
+    background-size: 32px 32px;
+    background-position: left top;
     background-repeat: no-repeat;
     text-indent: 50px;
     user-select: none;
@@ -266,4 +267,12 @@ header .menu a:hover {
 
 .social-media .icon.telegram {
     background-image: url(../img/telegram.png);
+}
+
+.menu-mobile-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
 }

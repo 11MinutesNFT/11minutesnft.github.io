@@ -11,6 +11,14 @@ $(function() {
         scrollToTarget(target);
     });
 
+    $(document).on('click', '[close-menu]', function (event) {
+        $('.mobile-menu').hide();
+    });
+
+    $(document).on('click', '[open-menu]', function (event) {
+        $('.mobile-menu').show();
+    });
+
     function scrollToTarget (target) {
         console.log($(target).offset().top);
         $('html').animate({

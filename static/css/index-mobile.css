@@ -1,0 +1,195 @@
+@media only screen and (max-width: 1024px) {
+    body {
+        background-image: url(../../static/img/bg-mobile.png);
+    }
+
+    .main {
+        padding-top: 50px;
+        padding-bottom: 0;
+    }
+
+    .page-container .social-media {
+        display: none;
+    }
+
+    .menu-holder {
+        height: 62px;
+    }
+
+    .menu-holder .menu {
+        display: none;
+    }
+
+    .logo-holder {
+        top: 18px;
+        left: 12px;
+    }
+
+    .logo {
+        width: 230px;
+        height: 32px;
+    }
+
+    .page-container {
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .faq .questions {
+        font-size: 20px;
+    }
+
+    .faq .title {
+        text-align: left;
+        font-size: 60px;
+        background-image: url(../img/top-line.png);
+        background-size: contain;
+    }
+
+    .rules .title {
+        text-align: left;
+        font-size: 60px;
+        background-image: url(../img/top-line.png);
+        background-size: contain;
+    }
+
+    .rules ul {
+        font-size: 20px;
+        text-indent: 20px;
+        padding: 0;
+        padding-bottom: 50px;
+    }
+
+    .rules ul li {
+        margin-top: 20px;
+        text-indent: 20px;
+    }
+
+    .rules ul li::before {
+        left: -20px;
+    }
+
+    .faq .questions .question {
+        background-size: 24px 24px;
+        text-indent: 0;
+        padding-left: 35px;
+    }
+
+    .end-empty-space {
+        margin-top: 0;
+    }
+
+    .main .countdown-holder {
+        width: 100%;
+        max-width: 500px;
+        font-size: 10px;
+        margin-top: 10px;
+        height: auto;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .main .countdown-holder .countdown-section .time {
+        font-size: 30px;
+    }
+    
+    .main .countdown-holder .colon {
+        font-size: 30px;
+    }
+
+    .main .countdown-holder .countdown-section .time-label {
+        font-size: 14px;
+        margin-top: 5px;
+    }
+
+    .main .description .title {
+        font-size: 30px;
+    }
+
+    .main .description .content {
+        font-size: 20px;
+        line-height: 28px;
+        margin-top: 20px;
+    }
+
+    .main .description {
+        box-sizing: border-box;
+        padding: 20px;
+        background-image: none;
+        max-width: 600px;
+        margin: auto;
+    }
+
+    .menu-mobile-icon {
+        display: block;
+        width: 40px;
+        height: 40px;
+        background-image: url(../img/menu-mobile-icon.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: fixed;
+        right: 10px;
+        top: 10px;
+        z-index: 20;
+    }
+
+    .mobile-menu {
+        display: block;
+        display: none;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        z-index: 300;
+        background-color: #000;
+        background-image: url(../../static/img/menu-mobile-bg.png);
+        background-size: 100% 100%;
+        background-attachment: fixed;
+    }
+
+    .mobile-menu .mobile-menu-wrapper .menu-items {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 160px;
+    }
+
+    .mobile-menu .mobile-menu-wrapper .menu-items a {
+        font-size: 50px;
+        color: white;
+        text-decoration: none;
+        background-image: url(../img/bot-line-mobile.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        padding: 30px;
+        padding-bottom: 20px;
+    }
+
+    .mobile-menu .mobile-menu-wrapper .menu-closer {
+        width: 50px;
+        height: 50px;
+        background-image: url(../img/close-menu-mobile.png);
+        background-size: 30px 30px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: fixed;
+        top: 30px;
+        right: 30px;
+    }
+
+    .mobile-menu .social-media {
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        margin: 0;
+        top: unset;
+        height: auto;
+        padding-bottom: 70px;
+    }
+
+    .mobile-menu .social-media .social-media-wrapper {
+        flex-direction: column;
+    }
+ }
