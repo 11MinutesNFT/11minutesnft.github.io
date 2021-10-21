@@ -190,6 +190,6 @@
     }
 
     .mobile-menu .social-media .social-media-wrapper {
-        flex-direction: column;
+        flex-direction: row;
     }
  }
